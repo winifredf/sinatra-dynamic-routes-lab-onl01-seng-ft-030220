@@ -19,6 +19,12 @@ class App < Sinatra::Base
     @word5 = params[:word5]
     "#{:word1} #{:word2} #{:word3} #{:word4} #{:word5}."
   end
+  
+  get "/say/:number/:phrase" do
+    @number = params[:number]
+    @phrase = params[:phrase]
+    
+  end
     
     # Write your code here!
 
