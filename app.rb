@@ -28,6 +28,8 @@ class App < Sinatra::Base
       phrase += @phrase
     end
     
+    phrase
+    
   end
     
     # Write your code here!
