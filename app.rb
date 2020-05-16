@@ -10,6 +10,10 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     "#{@number * @number}"
   end
+  
+  get "/say/:word1/:word2/:word3/:word4/:word5" do
+    @word1 = params[:word1]
+    @word2 = params[:word2]
   # Write your code here!
 
 end
